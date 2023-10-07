@@ -145,5 +145,4 @@ order by
 	tsc.visitors_count desc,
 	tsc."source",
 	tsc.medium,
-	tsc.campaign
-limit 15;
+	tsc.campaign;
