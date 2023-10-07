@@ -26,9 +26,9 @@ with tab as (
 select
     visitor_id,
     visit_date,
-    source,
-    medium,
-    campaign,
+    source as utm_source,
+    medium as utm_medium,
+    campaign as utm_campaign,
     lead_id,
     created_at,
     amount,
