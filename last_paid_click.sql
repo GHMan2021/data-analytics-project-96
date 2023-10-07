@@ -41,5 +41,4 @@ order by
     visit_date asc,
     source asc,
     medium asc,
-    campaign asc
-limit 10
+    campaign asc;
