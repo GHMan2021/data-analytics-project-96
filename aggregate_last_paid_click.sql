@@ -93,7 +93,7 @@ select
 	tl.revenue
 from
 	t_leads tl
-inner join
+left join
 	t_ads ta
 on 
 	(ta.campaign_date,
