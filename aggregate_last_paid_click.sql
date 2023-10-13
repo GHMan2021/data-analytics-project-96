@@ -83,10 +83,10 @@ group by
 )
 select 
 	tl.visit_date,
+	tl.visitors_count,
 	tl.utm_source,
 	tl.utm_medium,
 	tl.utm_campaign,
-	tl.visitors_count,
 	ta.total_cost,
 	tl.leads_count,
 	tl.purchases_count,
