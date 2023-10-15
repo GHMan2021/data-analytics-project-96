@@ -1,5 +1,4 @@
-select
-	*
+select *
 from
-	sessions s
+    sessions
 limit 100
