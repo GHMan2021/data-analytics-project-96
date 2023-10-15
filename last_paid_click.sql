@@ -23,6 +23,7 @@ with tab as (
         on s.visitor_id = l.visitor_id
     where s.medium in ('cpc', 'cpm', 'cpa', 'youtube', 'cpp', 'tg', 'social')
 )
+
 select
     visitor_id,
     visit_date,
@@ -41,4 +42,4 @@ order by
     visit_date asc,
     source asc,
     medium asc,
-    campaign asc;
+    campaign asc
