@@ -8,7 +8,7 @@ with t_ads as (
     from
         vk_ads
     group by
-        date(campaign_date) as campaign_date,
+        date(campaign_date),
         utm_source,
         utm_medium,
         utm_campaign
