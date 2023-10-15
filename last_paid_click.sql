@@ -11,12 +11,12 @@ with tab as (
         l.closing_reason,
         l.status_id,
         last_value(s.visit_date)
-            over (
-                partition by l.lead_id
-                order by
-                    s.visit_date
-                range between current row and unbounded following
-            )
+        over (
+            partition by l.lead_id
+            order by
+                s.visit_date
+            range between current row and unbounded following
+        )
         as lv
     from sessions as s
     full join leads as l
@@ -43,3 +43,4 @@ order by
     source asc,
     medium asc,
     campaign asc
+limit 10
