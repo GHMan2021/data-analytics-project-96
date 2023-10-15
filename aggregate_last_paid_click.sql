@@ -103,6 +103,8 @@ on
 	tl.utm_source,
 	tl.utm_medium,
 	tl.utm_campaign)
+where 
+	tl.utm_source <> 'admitad'
 order by
 	tl.revenue desc nulls last,
 	tl.visit_date,
